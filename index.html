@@ -3,14 +3,204 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Tableau Visualization</title>
-    <style>
-        .tableauPlaceholder {
-            margin: auto;
-        }
-    </style>
+    <title>Nemanja Đordan</title>
+    <link rel="stylesheet" href="./sass/main.css">
 </head>
 <body>
-    
+
+    <!-- <div class="chart-container">
+        <canvas id="donutChart1" class="donut-chart"></canvas>
+        <div class="legend" id="legend1"></div>
+    </div>
+
+    <div class="chart-container">
+        <canvas id="donutChart2" class="donut-chart"></canvas>
+        <div class="legend" id="legend2"></div>
+    </div> -->
+
+    <!-- Navigation bar -->
+     <div class="burgerwrap">
+        <div class="burger-top">
+            <div class="burger-child burger-child-1"></div>
+            <div class="burger-child burger-child-2"></div>
+        </div>
+        <div class="burger-bottom">
+            <div class="burger-child burger-child-1"></div>
+            <div class="burger-child burger-child-2"></div>
+        </div>
+     </div>
+
+    <!-- Navigation menu -->
+    <ul class="navigation-menu">
+        <li class="navigation-item">
+            <a href="javascript:void(0)" class="js-navigation" data-id="intro">Intro</a>
+        </li>
+        <li class="navigation-item">
+            <a href="javascript:void(0)" class="js-navigation" data-id="about">About</a>
+        </li>
+        <li class="navigation-item">
+            <a href="javascript:void(0)" class="js-navigation" data-id="tecnologies">Technologies</a>
+        </li>
+        <li class="navigation-item">
+            <a href="javascript:void(0)" class="js-navigation" data-id="portfolio">Portfolio</a>
+        </li>
+        <li class="navigation-item">
+            <a href="javascript:void(0)" class="js-navigation" data-id="contact">Contact</a>
+        </li>
+    </ul>
+
+
+    <!-- Main content -->
+    <main class="main">
+        <section class="section-hero" data-name="intro">
+            <div class="wrapper">
+                <span class="name">Nemanja Đordan</span>
+                <span class="top">YOUR</span>
+                <span class="middle">DATA</span>
+                <span class="bottom">EXPERIENCE</span>
+            </div>
+        </section>
+
+        <section class="section-about" data-name="about">
+            <div class="wrapper">
+                <div class="img-wrap"></div>
+
+                <p class="top-text">
+                    <span class="quotes quotes-first">"</span>
+                    <span class="text">Data analysts: because Excel won't analyze itself.</span>
+                    <span class="quotes quotes-second">"</span>
+                </p>
+
+                <div class="bottom-text">
+                    <p class="medium-text">
+                        <span>Why guess when you can know?</span>
+                        <span>Hire me, and I'll make sure your data gives you all the answers - no crystal ball required.</span>
+                    </p>
+                </div>                
+            </div>
+        </section>
+
+        <section class="section-tecnologies" data-name="tecnologies">
+            <div class="wrapper">
+                <h1 class="h1">Technologies</h1>
+                <ul class="list">
+                    <li class="item">
+                        <div class="img-wrap">
+                            <img src="./images/SQL.png" alt="">
+                        </div>
+                        <span class="text">SQL</span>
+                    </li>
+                    <li class="item">
+                        <div class="img-wrap">
+                            <img src="./images/MySQL.png" alt="">
+                        </div>                        
+                        <span class="text">MySQL</span>
+                    </li>
+                    <li class="item">
+                        <div class="img-wrap">
+                            <img src="./images/Tableau.png" alt="">
+                        </div>                        
+                        <span class="text">Tableau</span>
+                    </li>
+                    <li class="item">
+                        <div class="img-wrap">
+                            <img src="./images/Excel.png" alt="">
+                        </div>                        
+                        <span class="text">Excel</span>
+                    </li>
+                    <li class="item">
+                        <div class="img-wrap">
+                            <img src="./images/python.png" alt="">
+                        </div>                        
+                        <span class="text">Python</span>
+                    </li>
+                    <li class="item">
+                        <div class="img-wrap">
+                            <img src="./images/HTML.png" alt="">
+                        </div>                        
+                        <span class="text">HTML</span>
+                    </li>
+                    <li class="item">
+                        <div class="img-wrap">
+                            <img src="./images/CSS.png" alt="">
+                        </div>                        
+                        <span class="text">CSS</span>
+                    </li>
+                    <li class="item">
+                        <div class="img-wrap">
+                            <img src="./images/javascrip.png" alt="">
+                        </div>                        
+                        <span class="text">JavaScript</span>
+                    </li>
+                    <li class="item">
+                        <div class="img-wrap">
+                            <img src="./images/jira.png" alt="">
+                        </div>                        
+                        <span class="text">Jira</span>
+                    </li>
+                    <li class="item">
+                        <div class="img-wrap">
+                            <img src="./images/photoshop.png" alt="">
+                        </div>                        
+                        <span class="text">Photoshop</span>
+                    </li>
+                    <li class="item">
+                        <div class="img-wrap">
+                            <img src="./images/illustrator.png" alt="">
+                        </div>                        
+                        <span class="text">Illustrator</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section-portfolio" data-name="portfolio">
+            <div class="wrapper">
+                <h1 class="h1">Portfolio</h1>
+                <ul>
+                    <li>
+                        <h2 class="subtitle">Name of the project</h2>
+                        <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti dolores, culpa numquam odio quasi unde itaque. Dolores tempore eos voluptates!</p>
+                        <div class="img-wrap">
+                            <img src="" alt="">
+                            <span class="button">View the project</span>
+                        </div>
+                    </li> 
+                    <li>
+                        <h2 class="subtitle">Name of the project</h2>
+                        <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti dolores, culpa numquam odio quasi unde itaque. Dolores tempore eos voluptates!</p>
+                        <div class="img-wrap">
+                            <img src="" alt="">
+                            <span class="button">View the project</span>
+                        </div>
+                    </li>
+                    <li>
+                        <h2 class="subtitle">Name of the project</h2>
+                        <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti dolores, culpa numquam odio quasi unde itaque. Dolores tempore eos voluptates!</p>
+                        <div class="img-wrap">
+                            <img src="" alt="">
+                            <span class="button">View the project</span>
+                        </div>
+                    </li>
+                    <li>
+                        <h2 class="subtitle">Name of the project</h2>
+                        <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti dolores, culpa numquam odio quasi unde itaque. Dolores tempore eos voluptates!</p>
+                        <div class="img-wrap">
+                            <img src="" alt="">
+                            <span class="button">View the project</span>
+                        </div>
+                    </li>
+                    <li>
+                        <h2 class="subtitle">Name of the project</h2>
+                        <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti dolores, culpa numquam odio quasi unde itaque. Dolores tempore eos voluptates!</p>
+                    </li>   
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer class="footer" data-name="contact"></footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./js/app.js"></script>
 </body>
 </html>

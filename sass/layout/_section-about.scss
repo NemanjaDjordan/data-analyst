@@ -1,0 +1,50 @@
+.section-about {
+    background-color: $background;
+    padding-bottom: 10rem;
+    .wrapper {
+        position: relative;
+        color: $white;
+    }
+    .img-wrap {
+        width: 60%;
+        height: 30vh;
+        background: url('../images/section-about.jpg') no-repeat bottom / cover;
+        margin-left: auto;
+        position: relative;
+        top: -15vh;
+        right: 10vw;
+    }
+    .top-text {
+        font-size: 2rem;
+        font-style: italic;
+        @include flex-column;
+        position: absolute;
+        top: 20%;
+        left: 10%;
+        background-color: $white;
+        padding: 74px;
+        color: $black;
+        display: inline-block;
+    }
+    .quotes {
+        font-size: 4rem;
+        position: absolute;
+        display: inline-block;
+        &:first-child {
+            left: 50px;
+            top: 50px;
+        }
+
+        &:last-child {
+            right: 50px;
+            bottom: 28px;
+        }
+    }
+    .bottom-text {
+        margin: 50px 0 0 50%;
+        font-size: 3rem;
+        padding-right: 30px;
+        line-height: 1.2;
+        display: block;
+    }
+}

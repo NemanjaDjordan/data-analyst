@@ -22,3 +22,15 @@
   }
 }
 
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+@mixin flex-column {
+  display: flex;
+  justify-content: space-between; 
+  align-items: flex-start;
+  flex-direction: column;
+}

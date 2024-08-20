@@ -1,0 +1,22 @@
+.section-tecnologies {
+    padding: 10rem 0;
+    .list {
+        @include flex-center;
+        align-items: flex-start;
+    }
+    .item {
+        margin: 20px 50px;
+        font-size: 1.5rem;
+        height: 140px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .img-wrap {
+        width: 70px;
+    }
+    .text {
+       text-align: center;
+    //    margin-top: 1.5rem;
+    }
+}
