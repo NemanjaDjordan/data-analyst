@@ -1,6 +1,6 @@
 .section-about {
     background-color: $background;
-    padding-bottom: 10rem;
+    padding-bottom: 25rem;
     .wrapper {
         position: relative;
         color: $white;
@@ -17,6 +17,7 @@
     .top-text {
         font-size: 2rem;
         font-style: italic;
+        font-weight: bold;
         @include flex-column;
         position: absolute;
         top: 20%;
@@ -24,27 +25,34 @@
         background-color: $white;
         padding: 74px;
         color: $black;
-        display: inline-block;
+    }
+    .text:last-child {
+        align-self: flex-end;
     }
     .quotes {
-        font-size: 4rem;
-        position: absolute;
-        display: inline-block;
-        &:first-child {
-            left: 50px;
-            top: 50px;
-        }
-
-        &:last-child {
-            right: 50px;
-            bottom: 28px;
-        }
+        font-size: 4rem;      
+    }
+    .quotes-first {
+        position: relative;
+        top: 9px;
+        left: -20px;
+    }
+    .quotes-second {
+        align-self: flex-end;
+        position: relative;
+        right: -10px;
     }
     .bottom-text {
-        margin: 50px 0 0 50%;
-        font-size: 3rem;
+        margin: 0 0 0 50%;
+        font-size: 2rem;
+        font-style: italic;
         padding-right: 30px;
         line-height: 1.2;
         display: block;
+        position: relative;
+        top: 17rem;
+        span:last-child {
+            text-align: end;
+        }
     }
 }

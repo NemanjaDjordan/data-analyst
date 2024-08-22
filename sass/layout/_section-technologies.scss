@@ -1,5 +1,7 @@
 .section-tecnologies {
     padding: 10rem 0;
+    background-color: $background;
+    color: $white;
     .list {
         @include flex-center;
         align-items: flex-start;
