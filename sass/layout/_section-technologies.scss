@@ -1,6 +1,6 @@
 .section-tecnologies {
     padding: 10rem 0;
-    background-color: $background;
+    background-color: $blueDarkest;
     color: $white;
     .list {
         @include flex-center;
@@ -19,6 +19,5 @@
     }
     .text {
        text-align: center;
-    //    margin-top: 1.5rem;
     }
 }

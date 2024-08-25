@@ -1,4 +1,5 @@
 .section-hero {
+    background-color: $blue;
     .wrapper {
         @include flex-column;
         padding: 15rem 0 30rem;
@@ -10,10 +11,11 @@
         transition: all 1s ease;
         font-size: 10vw;
         padding: 0 0 0 20px;
+        color: $white;
     }
     .middle {
         transition: all 1.2s ease;
-        color: $highlight;
+        color: $blueDarkest;
         font-weight: bold;
     }
     .bottom {
@@ -24,8 +26,9 @@
         top: 50px;
         left: 20px;
         font-size: 2rem;
-        border-bottom: 1px solid $highlight;
+        border-bottom: 1px solid $blueDarkest;
         padding: 0 0 3px 0;
+        color: $white;
     }
 }
 .section-hero-animate {

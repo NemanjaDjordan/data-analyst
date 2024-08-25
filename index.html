@@ -7,17 +7,6 @@
     <link rel="stylesheet" href="./sass/main.css">
 </head>
 <body>
-
-    <!-- <div class="chart-container">
-        <canvas id="donutChart1" class="donut-chart"></canvas>
-        <div class="legend" id="legend1"></div>
-    </div>
-
-    <div class="chart-container">
-        <canvas id="donutChart2" class="donut-chart"></canvas>
-        <div class="legend" id="legend2"></div>
-    </div> -->
-
     <!-- Navigation bar -->
      <div class="burgerwrap">
         <div class="burger-top">
@@ -74,8 +63,8 @@
 
                 <div class="bottom-text">
                     <p class="medium-text">
-                        <span>"Why guess when you can know?</span>
-                        <span>Hire me, and I'll make sure your data gives you all the answers - no crystal ball required."</span>
+                        <span>" Why guess when you can know?</span>
+                        <span>Hire me, and I'll make sure your data gives you all the answers - no crystal ball required. "</span>
                         <span>Me</span>
                     </p>
                 </div>                
@@ -159,50 +148,72 @@
         <section class="section-portfolio" data-name="portfolio">
             <div class="wrapper">
                 <h1 class="h1">Portfolio</h1>
-                <ul>
-                    <li>
-                        <h2 class="subtitle">Name of the project</h2>
-                        <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti dolores, culpa numquam odio quasi unde itaque. Dolores tempore eos voluptates!</p>
+                <ul class="list">
+                    <li class="item">
+                        <h2 class="subtitle">Data Cleaning and Feature Engineering for Titanic Dataset</h2>
+                        <p class="text">This script loads the Titanic dataset, cleans it by handling missing values, removing duplicates, and converting data types. It also creates a new 'FamilySize' feature. Finally, it saves the cleaned data to a CSV file for further analysis.</p>
                         <div class="img-wrap">
-                            <img src="" alt="">
-                            <span class="button">View the project</span>
+                            <img src="./images/portfolio-1.png" alt="">                            
                         </div>
+                        <span class="button" data-id="1">View the project</span>
                     </li> 
-                    <li>
+                    <li class="item">
+                        <h2 class="subtitle">Visualizing Sales and Profit Data from Excel Using Pandas and Seaborn</h2>
+                        <p class="text">The code loads an Excel file into a pandas DataFrame and uses Seaborn to create various visualizations, including sales by segment and country, customer sales, monthly profit, units sold by segment, and top-selling products. Each plot is customized with titles, labels, and color palettes for clear presentation.</p>
+                        <div class="img-wrap">
+                            <img src="./images/portfolio-2.png" alt="">                            
+                        </div>
+                        <span class="button" data-id="2">View the project</span>
+                    </li>
+                    <li class="item">
+                        <h2 class="subtitle">Name of the project</h2>
+                            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti dolores, culpa numquam odio quasi unde itaque. Dolores tempore eos voluptates!</p>
+                            <div class="img-wrap">
+                            <img src="" alt="">                            
+                        </div>
+                        <span class="button">View the project</span>
+                    </li>
+                    <li class="item">
                         <h2 class="subtitle">Name of the project</h2>
                         <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti dolores, culpa numquam odio quasi unde itaque. Dolores tempore eos voluptates!</p>
                         <div class="img-wrap">
-                            <img src="" alt="">
-                            <span class="button">View the project</span>
+                            <img src="" alt="">                            
                         </div>
+                        <span class="button">View the project</span>
                     </li>
-                    <li>
+                    <li class="item">
                         <h2 class="subtitle">Name of the project</h2>
                         <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti dolores, culpa numquam odio quasi unde itaque. Dolores tempore eos voluptates!</p>
                         <div class="img-wrap">
-                            <img src="" alt="">
-                            <span class="button">View the project</span>
+                            <img src="" alt="">                            
                         </div>
-                    </li>
-                    <li>
+                        <span class="button">View the project</span>
+                    </li> 
+                    <li class="item">
                         <h2 class="subtitle">Name of the project</h2>
                         <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti dolores, culpa numquam odio quasi unde itaque. Dolores tempore eos voluptates!</p>
                         <div class="img-wrap">
-                            <img src="" alt="">
-                            <span class="button">View the project</span>
+                            <img src="" alt="">                            
                         </div>
+                        <span class="button">View the project</span>
                     </li>
-                    <li>
-                        <h2 class="subtitle">Name of the project</h2>
-                        <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti dolores, culpa numquam odio quasi unde itaque. Dolores tempore eos voluptates!</p>
-                    </li>   
                 </ul>
             </div>
+            <ul class="raw-files">
+                <li class="item" data-id="1">
+                    <span class="close-button">X</span>
+                    <script src="https://gist.github.com/NemanjaDjordan/d1fd8ebd86b2387aad860eb8047f0053.js"></script>
+                </li>
+                <li class="item" data-id="2">
+                    <span class="close-button">X</span>
+                    <script src="https://gist.github.com/NemanjaDjordan/afd8edc0560fb3bf32fa157b370178b3.js"></script>
+                </li>
+            </ul>
         </section>
     </main>
+
     <footer class="footer" data-name="contact"></footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="./js/app.js"></script>
 </body>
 </html>
