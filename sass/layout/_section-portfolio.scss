@@ -72,10 +72,17 @@
     position: absolute;
     right: 30px;
     top: 30px;
-    color: $biege;
+    color: $blueDarker;
     z-index: 5;
+    border: 1px solid $blueDarker;
+    padding: 5px 10px;
   }
   .close-button:hover{
     cursor: pointer;
+  }
+  .tableauPlaceholder {
+    width: calc(100vw - 6rem) !important;
+    display: flex !important;
+    @include flex-center;
   }
 }

@@ -1,6 +1,6 @@
 // Select elements
 const navigationMenu = document.querySelector('.navigation-menu');
-const body = document.querySelector('body');
+const body = document.body;
 const burgerWrap = document.querySelector('.burgerwrap');
 const jsNavigation = document.querySelectorAll('.js-navigation');
 const portfolioItem = document.querySelectorAll('.raw-files .item');
@@ -49,6 +49,13 @@ document.addEventListener('keyup', evt => {
         burgerWrap.classList.remove('burger-animation');
         navigationMenu.classList.remove('navigation-menu-animation');
         portfolioItem.forEach(item => item.classList.remove('portfolio-active'));
+
+        const isActive = Array.from(portfolioItem).some(item => item.classList.contains('portfolio-active'));
+        burgerWrap.style.display = isActive ? 'none' : 'inline-block';
+
+        // Add scroll
+        body.style.overflow = 'auto';
+
         removeScrollLock();
     }
 });
@@ -72,25 +79,47 @@ const words = ['file_path', 'df', 'figsize', 'segment_sales', 'data', 'palette',
 
 blobCodeLines.forEach(line => {
     const containsHash = line.textContent.includes('#');
-    const parenColor = containsHash ? '#6a993e' : '#ce9178';
+    const parenColor = containsHash ? '#6a993e' : '#f9c923';
     const keywordColor = containsHash ? '#6a993e' : '#3ac9a2';
     const wordColor = containsHash ? '#6a993e' : '#9cdcfe';
     const quoteColor = containsHash ? '#6a993e' : '#ce9178';
+    const bracketColor = containsHash ? '#6a993e' : '#d572d5';
+    const ifColor = containsHash ? '#6a993e' : '#c287bf';
 
-    let html = line.innerHTML
+    let html = line.innerHTML;
+
+    // Highlight parentheses
+    html = html
         .replace(/\(/g, `<span style="color: ${parenColor}; display:inline-block">(</span>`)
-        .replace(/\)/g, `<span style="color: ${parenColor}; display:inline-block">)</span>`)
-        .replace(/\bimport\b/g, '<span style="color: #c586c0; display:inline-block">import</span>');
+        .replace(/\)/g, `<span style="color: ${parenColor}; display:inline-block">)</span>`);
 
+    // Highlight square brackets
+    html = html
+    .replace(/\[/g, `<span style="color: ${bracketColor}; display:inline-block">[</span>`)
+    .replace(/\]/g, `<span style="color: ${bracketColor}; display:inline-block">]</span>`);
+
+
+    // Highlight 'import' keyword
+    html = html.replace(/\bimport\b/g, '<span style="color: #c586c0; display:inline-block">import</span>');
+
+    // Highlight 'if' keyword
+    html = html.replace(/\bif\b/g, `<span style="color: ${ifColor}; display:inline-block">if</span>`);
+
+    // Highlight keywords
     keywords.forEach(keyword => {
-        highlightTextContent(line, new RegExp(`\\b${keyword}\\b`, 'g'), keywordColor);
+        const regex = new RegExp(`\\b${keyword}\\b`, 'g');
+        html = html.replace(regex, `<span style="color: ${keywordColor}; display:inline-block">${keyword}</span>`);
     });
 
+    // Highlight specific words
     words.forEach(word => {
-        highlightTextContent(line, new RegExp(`\\b${word}\\b`, 'g'), wordColor);
+        const regex = new RegExp(`\\b${word}\\b`, 'g');
+        html = html.replace(regex, `<span style="color: ${wordColor}; display:inline-block">${word}</span>`);
     });
 
+    // Highlight text between single quotes
     html = html.replace(/'([^']*)'/g, match => `<span style="color: ${quoteColor}; display:inline-block">${match}</span>`);
+
     line.innerHTML = html;
 });
 
@@ -109,6 +138,8 @@ portfolioButtons.forEach(button => {
         if (correspondingItem) {
             correspondingItem.classList.toggle('portfolio-active');
         }
+        // Remove scroll
+        body.style.overflow = 'hidden';
 
         // Check if any item has the 'portfolio-active' class
         const isActive = Array.from(portfolioItem).some(item => item.classList.contains('portfolio-active'));
@@ -124,9 +155,13 @@ document.querySelectorAll('.close-button').forEach(button => {
         if (correspondingItem) {
             correspondingItem.classList.toggle('portfolio-active');
         }
+        // Add scroll
+        body.style.overflow = 'auto';
 
         // Check if any item has the 'portfolio-active' class
         const isActive = Array.from(portfolioItem).some(item => item.classList.contains('portfolio-active'));
         burgerWrap.style.display = isActive ? 'none' : 'inline-block';
     });
 });
+
+

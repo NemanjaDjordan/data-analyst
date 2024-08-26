@@ -157,42 +157,6 @@ html {
   scroll-behavior: smooth;
 }
 
-.chart-container {
-  width: 50%;
-  position: relative;
-  max-width: 400px;
-  margin-bottom: 50px;
-  font-size: 1.3rem;
-}
-
-.donut-chart {
-  width: 100%;
-  height: auto;
-}
-
-.legend {
-  margin-top: 20px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-.legend div {
-  display: flex;
-  align-items: center;
-  margin: 5px;
-}
-.legend div span {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  margin-right: 10px;
-}
-
-.footer {
-  height: 70vh;
-  background-color: green;
-}
-
 body {
   font-family: "Arial", sans-serif;
 }
@@ -553,11 +517,49 @@ body {
   position: absolute;
   right: 30px;
   top: 30px;
-  color: #E1D7B7;
+  color: #55679C;
   z-index: 5;
+  border: 1px solid #55679C;
+  padding: 5px 10px;
 }
 .raw-files .close-button:hover {
   cursor: pointer;
+}
+.raw-files .tableauPlaceholder {
+  width: calc(100vw - 6rem) !important;
+  display: flex !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer {
+  background-color: #7C93C3;
+  color: White;
+  padding: 20px;
+  text-align: center;
+}
+.footer .footer-text {
+  margin-bottom: 10px;
+  text-align: right;
+  font-size: 0.8rem;
+}
+.footer .footer-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 10px;
+}
+.footer .footer-link {
+  color: White;
+  text-decoration: none;
+  font-size: 14px;
+}
+.footer .footer-link:hover {
+  text-decoration: underline;
+  color: #1E2A5E;
 }
 
 .button {
