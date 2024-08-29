@@ -513,25 +513,28 @@ body {
   padding: 2rem;
 }
 .raw-files .close-button {
+  background-color: #E1D7B7;
   font-size: 5rem;
-  position: absolute;
+  position: fixed;
   right: 30px;
   top: 30px;
-  color: #55679C;
+  color: #1E2A5E;
   z-index: 5;
-  border: 1px solid #55679C;
+  border: 1px solid #1E2A5E;
   padding: 5px 10px;
 }
 .raw-files .close-button:hover {
   cursor: pointer;
 }
 .raw-files .tableauPlaceholder {
-  width: calc(100vw - 6rem) !important;
+  width: 1700px !important;
+  height: 96vh !important;
   display: flex !important;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  margin: 0 auto;
 }
 
 .footer {
