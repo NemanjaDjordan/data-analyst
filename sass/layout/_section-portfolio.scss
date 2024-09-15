@@ -32,6 +32,7 @@
   }
   .text {
     height: 100%;
+    line-height: 1.1;
   }
   .gist {
     .blob-code-inner {
@@ -71,8 +72,8 @@
     background-color: $biege;
     font-size: 5rem;
     position: fixed;
-    right: 30px;
-    top: 30px;
+    right: 10px;
+    top: 10px;
     color: $blueDarkest;
     z-index: 5;
     border: 1px solid $blueDarkest;
@@ -80,12 +81,5 @@
   }
   .close-button:hover{
     cursor: pointer;
-  }
-  .tableauPlaceholder {
-    width: 1700px  !important;
-    height: 96vh !important;
-    display: flex !important;
-    @include flex-center;
-    margin: 0 auto;
   }
 }
