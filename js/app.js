@@ -5,9 +5,7 @@ const burgerWrap = document.querySelector('.burgerwrap');
 const jsNavigation = document.querySelectorAll('.js-navigation');
 const portfolioItem = document.querySelectorAll('.raw-files .item');
 const heroAnimationElements = document.querySelectorAll('.section-hero .wrapper .top, .section-hero .wrapper .middle, .section-hero .wrapper .bottom');
-const blobCodeLines = document.querySelectorAll('.blob-code-inner');
-const portfolioButtons = document.querySelectorAll('.button');
-const tableCells = document.querySelectorAll('td');
+
 
 // Utility functions
 function toggleScrollLock() {
@@ -19,6 +17,9 @@ function removeScrollLock() {
 }
 
 function handleNavigation(evt) {
+    burgerWrap.classList.toggle('burger-animation');
+    navigationMenu.classList.toggle('navigation-menu-animation');
+    toggleScrollLock();
     evt.preventDefault();
     const dataId = this.getAttribute('data-id');
     const targetElement = document.querySelector(`[data-name="${dataId}"]`);
