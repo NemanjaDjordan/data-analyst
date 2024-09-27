@@ -188,7 +188,7 @@ body {
 }
 @media (max-width: 1200px) {
   .wrapper {
-    padding: 20px;
+    padding: 0 20px;
   }
 }
 @media (max-width: 768px) {
@@ -416,7 +416,7 @@ body {
 
 .section-about {
   background-color: #55679C;
-  padding-bottom: 20rem;
+  padding: 0 0 16rem 0;
 }
 .section-about .wrapper {
   position: relative;
@@ -429,17 +429,15 @@ body {
   margin-left: auto;
   position: relative;
   top: -15vh;
-  right: 10vw;
 }
 @media (max-width: 1024px) {
   .section-about .img-wrap {
     width: 80%;
-    right: 0;
   }
 }
 @media (max-width: 768px) {
   .section-about .img-wrap {
-    display: none;
+    visibility: hidden;
   }
 }
 .section-about .top-text {
@@ -451,7 +449,7 @@ body {
   align-items: flex-start;
   flex-direction: column;
   position: absolute;
-  top: 20%;
+  top: 70%;
   left: 10%;
   background-color: #E1D7B7;
   padding: 29px 53px;
@@ -465,8 +463,18 @@ body {
 }
 @media (max-width: 768px) {
   .section-about .top-text {
-    top: -94%;
     width: calc(100% - 20px);
+    top: 48%;
+  }
+}
+@media (max-width: 597px) {
+  .section-about .top-text {
+    top: 45%;
+  }
+}
+@media (max-width: 370px) {
+  .section-about .top-text {
+    top: 42%;
   }
 }
 .section-about .text:last-child {

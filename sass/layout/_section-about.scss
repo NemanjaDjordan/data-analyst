@@ -1,6 +1,6 @@
 .section-about {
     background-color: $blueDarker;
-    padding-bottom: 20rem;
+    padding: 0 0 16rem 0;
     .wrapper {
         position: relative;
         color: $white;
@@ -12,13 +12,13 @@
         margin-left: auto;
         position: relative;
         top: -15vh;
-        right: 10vw;
+        // right: 10vw;
         @include breakpoint(tablet) {
             width: 80%;
-            right: 0;
+            // right: 0;
         }
         @include breakpoint(phone) {
-            display: none;
+            visibility: hidden;
         }
     }
     .top-text {
@@ -27,7 +27,7 @@
         font-weight: bold;
         @include flex-column;
         position: absolute;
-        top: 20%;
+        top: 70%;
         left: 10%;
         background-color: $biege;
         padding: 29px 53px;
@@ -37,8 +37,14 @@
             left: auto;
         }
         @include breakpoint(phone) {
-            top: -94%;
             width: calc(100% - 20px);
+            top: 48%;
+        }
+        @include breakpoint(597px) {
+            top: 45%;
+        }
+        @include breakpoint(370px) {
+            top: 42%;
         }
     }
     .text:last-child {
