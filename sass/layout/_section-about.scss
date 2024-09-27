@@ -13,6 +13,13 @@
         position: relative;
         top: -15vh;
         right: 10vw;
+        @include breakpoint(tablet) {
+            width: 80%;
+            right: 0;
+        }
+        @include breakpoint(phone) {
+            display: none;
+        }
     }
     .top-text {
         font-size: 2rem;
@@ -26,6 +33,13 @@
         padding: 29px 53px;
         color: $black;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+        @include breakpoint(tablet) {
+            left: auto;
+        }
+        @include breakpoint(phone) {
+            top: -94%;
+            width: calc(100% - 20px);
+        }
     }
     .text:last-child {
         align-self: flex-end;
@@ -54,6 +68,9 @@
         top: 10rem;
         span:last-child {
             text-align: end;
+        }
+        @include breakpoint(phone) {
+            margin: 0 0 0 20%;
         }
     }
 }
