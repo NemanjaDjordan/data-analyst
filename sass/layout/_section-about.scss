@@ -22,12 +22,14 @@
         }
     }
     .top-text {
+        width: 65%;
+        line-height: 26px;
         font-size: 2rem;
         font-style: italic;
         font-weight: bold;
         @include flex-column;
         position: absolute;
-        top: 70%;
+        top: 83%;
         left: 10%;
         background-color: $biege;
         padding: 29px 53px;

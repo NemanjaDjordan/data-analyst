@@ -441,6 +441,8 @@ body {
   }
 }
 .section-about .top-text {
+  width: 65%;
+  line-height: 26px;
   font-size: 2rem;
   font-style: italic;
   font-weight: bold;
@@ -449,7 +451,7 @@ body {
   align-items: flex-start;
   flex-direction: column;
   position: absolute;
-  top: 70%;
+  top: 83%;
   left: 10%;
   background-color: #E1D7B7;
   padding: 29px 53px;
