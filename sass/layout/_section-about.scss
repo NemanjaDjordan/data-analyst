@@ -12,10 +12,8 @@
         margin-left: auto;
         position: relative;
         top: -15vh;
-        // right: 10vw;
         @include breakpoint(tablet) {
             width: 80%;
-            // right: 0;
         }
         @include breakpoint(phone) {
             visibility: hidden;
