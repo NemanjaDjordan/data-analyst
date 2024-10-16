@@ -43,10 +43,6 @@
         @include breakpoint(370px) {
             top: 37%;
         }
-        span {
-            font-weight: bold;
-            display: inline-block;
-        }
     }
     .text:last-child {
         align-self: flex-end;

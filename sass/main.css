@@ -476,10 +476,6 @@ body {
     top: 37%;
   }
 }
-.section-about .top-text span {
-  font-weight: bold;
-  display: inline-block;
-}
 .section-about .text:last-child {
   align-self: flex-end;
 }
