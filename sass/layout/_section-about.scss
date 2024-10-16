@@ -25,12 +25,9 @@
         width: 65%;
         line-height: 26px;
         font-size: 2rem;
-        font-style: italic;
-        font-weight: bold;
         @include flex-column;
         position: absolute;
-        top: 83%;
-        left: 10%;
+        top: 79%;
         background-color: $biege;
         padding: 29px 53px;
         color: $black;
@@ -40,13 +37,17 @@
         }
         @include breakpoint(phone) {
             width: calc(100% - 20px);
-            top: 48%;
+            top: 54%;
         }
         @include breakpoint(597px) {
-            top: 45%;
+            top: 50%;
         }
         @include breakpoint(370px) {
-            top: 42%;
+            top: 37%;
+        }
+        span {
+            font-weight: bold;
+            display: inline-block;
         }
     }
     .text:last-child {
